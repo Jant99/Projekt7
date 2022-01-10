@@ -10,7 +10,7 @@
         <Button Content="Wypożycz" HorizontalAlignment="Left" Margin="364,101,0,0" VerticalAlignment="Top" Width="72" Height="48"/>
         <Button Content="Oddaj" HorizontalAlignment="Left" Margin="364,196,0,0" VerticalAlignment="Top" Width="72" Height="47"/>
         <Button Content="Dodaj czytelnika" HorizontalAlignment="Left" Margin="156,336,0,0" VerticalAlignment="Top" Width="112" Height="43" Click="Button_Click"/>
-        <Button Content="Dodaj książkę" HorizontalAlignment="Left" Margin="578,336,0,0" VerticalAlignment="Top" Width="109" Height="43"/>
+        <Button Content="Dodaj książkę" HorizontalAlignment="Left" Margin="578,336,0,0" VerticalAlignment="Top" Width="109" Height="43" Click="Button_Click_1"/>
         <ListView Name="Tabela_czyt" HorizontalAlignment="Left" Height="189" Margin="73,101,0,0" VerticalAlignment="Top" Width="256">
             <ListView.View>
                 <GridView AllowsColumnReorder="True">

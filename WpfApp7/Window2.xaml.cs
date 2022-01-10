@@ -15,24 +15,24 @@ using System.Windows.Shapes;
 namespace WpfApp7
 {
     /// <summary>
-    /// Logika interakcji dla klasy Window1.xaml
+    /// Logika interakcji dla klasy Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string Imie = name.Text;
-            string Nazwisko = surname.Text;
-            ((MainWindow)Application.Current.MainWindow).Dodaj_czytelnika(Imie, Nazwisko);
+            string Tytul = Title.Text;
+            string Autor = Author.Text;
+            ((MainWindow)Application.Current.MainWindow).Dodaj_ksiazke(Autor, Tytul);
             this.Close();
         }
 
-        private void Button_Click1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
