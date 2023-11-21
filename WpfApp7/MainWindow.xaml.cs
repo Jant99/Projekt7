@@ -27,18 +27,19 @@ namespace WpfApp7
 
         public class Czytelnik
         {
-            public string Name;
-            public string Surname;
-            public int ID;
+            public string Name { get; set; }
+            public string Surname { get; set; }
+            public int ID { get; set; }
         }
 
         public class Książka
         {
-            public string Tytuł;
-            public string Autor;
-            public int ID;
-            public int u_kogo;
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public int id { get; set; }
+            public string u_kogo { get; set; }
         }
+        public List<Książka> Lista_książęk { get; set; } = new List<Książka>();
 
         public void Dodaj_czytelnika(string imie, string nazwisko)
         {
@@ -55,11 +56,26 @@ namespace WpfApp7
         {
             int id = Tabela_ksiag.Items.Count + 1;
             Książka ksiazka = new Książka();
-            ksiazka.Tytuł = tytul;
-            ksiazka.Autor = autor;
-            ksiazka.ID = id;
+            ksiazka.Title = tytul;
+            ksiazka.Author = autor;
+            ksiazka.id = id;
+            ksiazka.u_kogo = "-";
             Tabela_ksiag.Items.Add(ksiazka);
+            Lista_książęk.Add(ksiazka);
             Tabela_ksiag.Items.Refresh();
+        }
+
+        public void Wypelnij_liste(ListView listview)
+        {
+            for(int i = 0; i < Lista_książęk.Count; i++) 
+            {
+                if (Lista_książęk[i].u_kogo == "-")
+                    listview.Items.Add(Lista_książęk[i]);
+            }
+        }
+        public void Wypozycz_ksiazke(int ID_ksiazki, int ID_wypozyczajacego)
+        {
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -72,6 +88,13 @@ namespace WpfApp7
         {
             Window2 window2 = new Window2();
             window2.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();
+            window3.Show();
+
         }
     }
 }

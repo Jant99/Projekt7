@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <TextBox Name ="name" HorizontalAlignment="Left" Height="49" Margin="138,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-        <TextBox Name="surname" HorizontalAlignment="Left" Height="49" Margin="500,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="194,334,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="Button_Click"/>
-        <Label Content="Wprowadż imię" HorizontalAlignment="Left" Margin="138,133,0,0" VerticalAlignment="Top" Width="176" Height="37" FontSize="18"/>
-        <Label Content="Wprowadż nazwisko" HorizontalAlignment="Left" Margin="481,133,0,0" VerticalAlignment="Top" Width="190" Height="37" FontSize="18"/>
-        <Button Content="Anuluj" HorizontalAlignment="Left" Margin="551,334,0,0" VerticalAlignment="Top" Height="34" Width="120" Click="Button_Click1"/>
+        <TextBox Name ="name" HorizontalAlignment="Left" Height="49" Margin="138,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20"/>
+        <TextBox Name="surname" HorizontalAlignment="Left" Height="49" Margin="510,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="166,334,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="Button_Click" BorderBrush="#FF31FF5F"/>
+        <Label Content="Wprowadź imię" HorizontalAlignment="Left" Margin="138,133,0,0" VerticalAlignment="Top" Width="180" Height="37" FontSize="18"/>
+        <Label Content="Wprowadź nazwisko" HorizontalAlignment="Left" Margin="510,133,0,0" VerticalAlignment="Top" Width="180" Height="37" FontSize="18"/>
+        <Button Content="Anuluj" HorizontalAlignment="Left" Margin="535,334,0,0" VerticalAlignment="Top" Height="34" Width="120" Click="Button_Click1" BorderBrush="#FFFC2323"/>
 
     </Grid>
 </Window>

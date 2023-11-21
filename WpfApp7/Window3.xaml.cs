@@ -15,26 +15,27 @@ using System.Windows.Shapes;
 namespace WpfApp7
 {
     /// <summary>
-    /// Logika interakcji dla klasy Window2.xaml
+    /// Logika interakcji dla klasy Window3.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window3 : Window
     {
-        public Window2()
+        public Window3()
         {
             InitializeComponent();
+            ((MainWindow)Application.Current.MainWindow).Wypelnij_liste(Booklist);
         }
+
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string Tytul = Title.Text;
-            string Autor = Author.Text;
-            ((MainWindow)Application.Current.MainWindow).Dodaj_ksiazke(Tytul, Autor);
-            this.Close();
+            this.Close();    
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            string id_czytelnika = id.Text;
+            string id_ksiazki = Booklist.SelectedItem.ToString();
         }
     }
 }

@@ -7,26 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Wypożycz" HorizontalAlignment="Left" Margin="364,101,0,0" VerticalAlignment="Top" Width="72" Height="48"/>
-        <Button Content="Oddaj" HorizontalAlignment="Left" Margin="364,196,0,0" VerticalAlignment="Top" Width="72" Height="47"/>
+        <Button Content="Wypożycz" HorizontalAlignment="Left" Margin="389,101,0,0" VerticalAlignment="Top" Width="72" Height="48" Click="Button_Click_2"/>
+        <Button Content="Oddaj" HorizontalAlignment="Left" Margin="389,189,0,0" VerticalAlignment="Top" Width="72" Height="47"/>
         <Button Content="Dodaj czytelnika" HorizontalAlignment="Left" Margin="156,336,0,0" VerticalAlignment="Top" Width="112" Height="43" Click="Button_Click"/>
         <Button Content="Dodaj książkę" HorizontalAlignment="Left" Margin="578,336,0,0" VerticalAlignment="Top" Width="109" Height="43" Click="Button_Click_1"/>
-        <ListView Name="Tabela_czyt" HorizontalAlignment="Left" Height="189" Margin="73,101,0,0" VerticalAlignment="Top" Width="256">
+        <ListView Name="Tabela_czyt" HorizontalAlignment="Left" Height="189" Margin="73,101,0,0" VerticalAlignment="Top" Width="286" d:ItemsSource="{d:SampleData ItemCount=5}">
             <ListView.View>
                 <GridView AllowsColumnReorder="True">
                     <GridViewColumn  DisplayMemberBinding="{Binding Path=Name}" Header="Imię" Width="70"/>
                     <GridViewColumn  DisplayMemberBinding="{Binding Path=Surname}" Header="Nazwisko" Width="150"/>
-                    <GridViewColumn  DisplayMemberBinding="{Binding Path=ID}" Header="ID" Width="36"/>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=ID}" Header="ID" Width="40"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <ListView Name="Tabela_ksiag" HorizontalAlignment="Left" Height="189" Margin="488,101,0,0" VerticalAlignment="Top" Width="275">
             <ListView.View>
                 <GridView AllowsColumnReorder="True">
-                    <GridViewColumn  DisplayMemberBinding="{Binding Path=Name}" Header="Tytuł" Width="70"/>
-                    <GridViewColumn  DisplayMemberBinding="{Binding Path=Surname}" Header="Autor" Width="90"/>
-                    <GridViewColumn  DisplayMemberBinding="{Binding Path=ID}" Header="ID" Width="30"/>
-                    <GridViewColumn  DisplayMemberBinding="{Binding Path=ID}" Header="Wypożyczył" Width="85"/>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=Title}" Header="Tytuł" Width="70"/>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=Author}" Header="Autor" Width="90"/>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=id}" Header="ID" Width="30"/>
+                    <GridViewColumn  DisplayMemberBinding="{Binding Path=u_kogo}" Header="Wypożyczył" Width="80"/>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>

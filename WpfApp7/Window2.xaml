@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-        <TextBox Name="Title" HorizontalAlignment="Left" Margin="112,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="193" Height="82"/>
-        <TextBox Name="Author" HorizontalAlignment="Left" Margin="511,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="192" Height="82"/>
-        <Label Content="Wprowadz tytuł" HorizontalAlignment="Left" Margin="112,109,0,0" VerticalAlignment="Top" Width="193" Height="40" HorizontalContentAlignment="Center" FontSize="20" IsEnabled="False" Foreground="#FF171717"/>
-        <Label Content="Wprowadz autora" HorizontalAlignment="Left" Margin="511,109,0,0" VerticalAlignment="Top" Width="192" Height="40" FontSize="20" HorizontalContentAlignment="Center"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="148,328,0,0" VerticalAlignment="Top" Height="43" Width="120" BorderBrush="#FF27A43E" Click="Button_Click"/>
-        <Button Content="Anuluj" HorizontalAlignment="Left" Margin="581,328,0,0" VerticalAlignment="Top" Height="42" Width="122" Click="Button_Click_1"/>
+        <TextBox Name="Title" HorizontalAlignment="Left" Margin="112,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="192" Height="82" FontSize="20"/>
+        <TextBox Name="Author" HorizontalAlignment="Left" Margin="511,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="192" Height="82" FontSize="20"/>
+        <Label Content="Wprowadź tytuł" HorizontalAlignment="Left" Margin="112,109,0,0" VerticalAlignment="Top" Width="193" Height="40" HorizontalContentAlignment="Center" FontSize="20" IsEnabled="False" Foreground="#FF171717"/>
+        <Label Content="Wprowadź autora" HorizontalAlignment="Left" Margin="511,109,0,0" VerticalAlignment="Top" Width="192" Height="40" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="148,329,0,0" VerticalAlignment="Top" Height="42" Width="120" BorderBrush="#FF27A43E" Click="Button_Click"/>
+        <Button Content="Anuluj" HorizontalAlignment="Left" Margin="546,329,0,0" VerticalAlignment="Top" Height="42" Width="120" Click="Button_Click_1" BorderBrush="#FFE52525"/>
 
     </Grid>
 </Window>
